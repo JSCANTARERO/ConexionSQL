@@ -10,6 +10,11 @@ namespace ConexionSQL
     {
         static void Main(string[] args)
         {
+            MyConnection myconexion = new MyConnection(DataProvider.SqlServer);
+
+            myconexion.Conectar();
+            myconexion.TipoDeConeccion();
+            Console.ReadLine();
         }
     }
 }

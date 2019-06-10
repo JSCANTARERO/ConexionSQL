@@ -24,7 +24,7 @@ namespace ConexionSQL
             switch(dataProvider)
             {
                 case DataProvider.SqlServer:
-                    MyConnectionSql myconnectionsql = new MyConnectionSql();
+                    MyConnectionSql myconnectionsql = new MyConnectionSql(dataProvider);
                     break;
             }
         }

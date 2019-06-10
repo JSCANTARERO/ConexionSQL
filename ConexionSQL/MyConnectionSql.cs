@@ -7,7 +7,7 @@ namespace ConexionSQL
     {
         public MyConnectionSql(DataProvider thedataprovider) : base (thedataprovider)
         {
-            SqlConnection connectionstring = new SqlConnection(@"server = (local)\SQLEXPRESS; security integrated = true;");
+            SqlConnection connectionstring = new SqlConnection(@"server = (local)\SQLEXPRESS; integrated security = true;");
             try
             {
                 Console.WriteLine("Conexion establecida");
