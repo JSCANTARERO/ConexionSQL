@@ -21,7 +21,17 @@ namespace ConexionSQL
 
         public void Conectar()
         {
+            switch(dataProvider)
+            {
+                case DataProvider.SqlServer:
+                    MyConnectionSql myconnectionsql = new MyConnectionSql();
+                    break;
+            }
+        }
 
+        public void TipoDeConeccion()
+        {
+            Console.WriteLine("Tu cobeccion es : {0}", dataProvider);
         }
     }
 }
